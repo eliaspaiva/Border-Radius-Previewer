@@ -64,12 +64,23 @@ input[type=number] {
 
 .copy-values {
   display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   margin: 10px auto;
 }
 
 section button {
-  
+  background-color: rgb(255, 255, 255);
+}
+
+section .input-copy {
+  background-color: rgb(255, 255, 255);
+  color: black;
+}
+
+section button, section .input-copy {
+  padding: 5px 15px 5px 15px;
 }
 
 footer {
