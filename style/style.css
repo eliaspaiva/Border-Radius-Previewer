@@ -46,8 +46,29 @@ input[type=number] {
   width: 10%;
   color: white;
   text-align: center;
+  position: relative;
 }
 
 footer span{
   text-decoration: underline;
+}
+
+.border-radius-top-left {
+  left: -28px;
+  top: -218px;
+}
+
+.border-radius-top-right {
+  right: -230px;
+  top: -218px;
+}
+
+.border-radius-bottom-left {
+  left: -87px;
+  top: -20px;
+}
+
+.border-radius-bottom-right {
+  right: -170px;
+  top: -20px;
 }
