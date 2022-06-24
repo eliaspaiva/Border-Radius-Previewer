@@ -15,7 +15,7 @@
 h1 {  
   margin-top: 2rem;
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   color: rgb(255, 255, 255);
 }
 
@@ -33,24 +33,13 @@ h1 {
   background-color: rgb(255, 255, 255);
 }
 
-footer {
-  color: white;
-  text-align: center;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  margin: 1rem auto;
-}
+
 
 input[type=number] {
   width: 10%;
   color: white;
   text-align: center;
   position: relative;
-}
-
-footer span{
-  text-decoration: underline;
 }
 
 .border-radius-top-left {
@@ -71,4 +60,27 @@ footer span{
 .border-radius-bottom-right {
   right: -170px;
   top: -20px;
+}
+
+.copy-values {
+  display: flex;
+  width: 100%;
+  margin: 10px auto;
+}
+
+section button {
+  
+}
+
+footer {
+  color: white;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  margin: 1rem auto;
+}
+
+footer span{
+  text-decoration: underline;
 }
