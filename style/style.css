@@ -1,0 +1,33 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Quicksand', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  background-color: rgb(53, 53, 53);
+}
+
+.full-page-wrapper {
+  width: 80%;
+  margin: 10px auto;
+}
+
+h1 {  
+  text-align: center;
+  font-size: 1.5rem;
+  color: rgb(255, 255, 255);
+}
+
+.main-border {
+  margin-top: 2rem;
+  height: 50vh;
+  border: 1px solid rgb(255, 255, 255);
+  background-color: rgb(230, 231, 235);
+}
+
+.inside-boder {
+  margin: 2rem;
+  height: 35vh;
+  border: 1px solid rgb(255, 255, 255);
+  background-color: rgb(255, 255, 255);
+}
