@@ -5,11 +5,13 @@ const inputBottomLeft = document.querySelector('.border-radius-bottom-left');
 const inputBottomRight = document.querySelector('.border-radius-bottom-right');
 const border = document.querySelector('.inside-boder');
 const copyInput = document.querySelector('.input-copy');
+  
 
 // Event Listeners
 inputTopLeft.addEventListener('input', ()=> {
   const valueTopLeft = Number(inputTopLeft.value);
   border.style.borderTopLeftRadius = `${valueTopLeft}px`;
+  copyInput.value = valueTopLeft;
 })
 
 inputTopRight.addEventListener('input', () => {
