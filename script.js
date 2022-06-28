@@ -46,3 +46,10 @@ inputBottomRight.addEventListener('input', () => {
   if (copyInput.value.length > 0) btnCopy.disabled = false;
   }
 );
+
+btnCopy.addEventListener('click', () => {
+  // Will select the text inside of the input
+  copyInput.select();
+  // Will copy the text
+  document.execCommand('Copy');
+})

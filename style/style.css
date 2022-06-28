@@ -83,6 +83,10 @@ section button, section .input-copy {
   padding: 5px 15px 5px 15px;
 }
 
+.btnCopy {
+  cursor: pointer;
+}
+
 footer {
   color: white;
   text-align: center;
