@@ -17,6 +17,7 @@ inputTopLeft.addEventListener('input', () => {
   border.style.borderTopLeftRadius = `${valueTopLeft}px`;
   valueLeftTop = valueTopLeft;
   copyInput.value = `${valueLeftTop}px`;
+  if (copyInput.value.length > 0) btnCopy.disabled = false;
 });
 
 inputTopRight.addEventListener('input', () => {
@@ -24,6 +25,8 @@ inputTopRight.addEventListener('input', () => {
   border.style.borderTopRightRadius = `${valueTopRight}px`;
   valueRightTop = valueTopRight;
   copyInput.value = `${valueLeftTop}px ${valueRightTop}px`;
+  if (copyInput.value.length > 0) btnCopy.disabled = false;
+
 });
 
 inputBottomLeft.addEventListener('input', () => {
@@ -31,6 +34,8 @@ inputBottomLeft.addEventListener('input', () => {
   border.style.borderBottomLeftRadius = `${valueBottomLeft}px`;
   valueLeftBottom = valueBottomLeft;
   copyInput.value = `${valueLeftTop}px ${valueRightTop}px ${valueLeftBottom}px`;
+  if (copyInput.value.length > 0) btnCopy.disabled = false;
+
 });
 
 inputBottomRight.addEventListener('input', () => {
@@ -38,14 +43,6 @@ inputBottomRight.addEventListener('input', () => {
   border.style.borderBottomRightRadius = `${valueBottomRight}px`;
   valueRightBottom = valueBottomRight;
   copyInput.value = `${valueLeftTop}px ${valueRightTop}px ${valueLeftBottom}px ${valueRightBottom}px`;
-  
+  if (copyInput.value.length > 0) btnCopy.disabled = false;
   }
-
 );
-
-
-if (copyInput.value.length === 0) {
-    btnCopy.disabled = true;
-  } else {
-    btnCopy.disabled = false;
-  }
