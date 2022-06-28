@@ -5,6 +5,7 @@ const inputBottomLeft = document.querySelector('.border-radius-bottom-left');
 const inputBottomRight = document.querySelector('.border-radius-bottom-right');
 const border = document.querySelector('.inside-boder');
 const copyInput = document.querySelector('.input-copy');
+const btnCopy = document.querySelector('.btnCopy');
 let valueLeftTop = 0;
 let valueRightTop = 0;
 let valueLeftBottom = 0;
@@ -37,5 +38,14 @@ inputBottomRight.addEventListener('input', () => {
   border.style.borderBottomRightRadius = `${valueBottomRight}px`;
   valueRightBottom = valueBottomRight;
   copyInput.value = `${valueLeftTop}px ${valueRightTop}px ${valueLeftBottom}px ${valueRightBottom}px`;
+  
   }
-); 
+
+);
+
+
+if (copyInput.value.length === 0) {
+    btnCopy.disabled = true;
+  } else {
+    btnCopy.disabled = false;
+  }
