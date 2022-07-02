@@ -12,6 +12,32 @@
   margin: 10px auto;
 }
 
+.input-flex {
+    display: flex;
+  }
+  
+  .input-value {
+    margin-top: 1rem;
+  }
+
+  label {
+    display: block;
+    padding-bottom: 0.5rem;
+    padding-right: 1rem;
+    color: white;
+  }
+
+  input[type=number] {
+  width: 13%;
+  height: 1.2rem;
+  color: white;
+  text-align: center;
+  position: static;
+}
+  section input {
+    display: flex;
+  }
+
 h1 {  
   margin-top: 2rem;
   text-align: center;
@@ -34,7 +60,6 @@ h1 {
 }
 
 
-
 input[type=number] {
   width: 10%;
   color: white;
@@ -42,25 +67,7 @@ input[type=number] {
   position: relative;
 }
 
-.border-radius-top-left {
-  left: -28px;
-  top: -218px;
-}
 
-.border-radius-top-right {
-  right: -230px;
-  top: -218px;
-}
-
-.border-radius-bottom-left {
-  left: -87px;
-  top: -20px;
-}
-
-.border-radius-bottom-right {
-  right: -170px;
-  top: -20px;
-}
 
 .copy-values {
   display: flex;
@@ -94,8 +101,13 @@ footer {
   bottom: 0;
   width: 100%;
   margin: 1rem auto;
+  display: none;
 }
 
 footer span{
   text-decoration: underline;
+}
+
+@media (min-width: 321px) and (max-width: 1024px) {
+  
 }

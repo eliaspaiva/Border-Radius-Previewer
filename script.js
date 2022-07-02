@@ -1,8 +1,8 @@
 // variables 
-const inputTopLeft = document.querySelector('.border-radius-top-left');
-const inputTopRight = document.querySelector('.border-radius-top-right');
-const inputBottomLeft = document.querySelector('.border-radius-bottom-left');
-const inputBottomRight = document.querySelector('.border-radius-bottom-right');
+const inputTopLeft = document.getElementById('border-radius-top-left');
+const inputTopRight = document.getElementById('border-radius-top-right');
+const inputBottomLeft = document.getElementById('border-radius-bottom-left');
+const inputBottomRight = document.getElementById('border-radius-bottom-right');
 const border = document.querySelector('.inside-boder');
 const copyInput = document.querySelector('.input-copy');
 const btnCopy = document.querySelector('.btnCopy');
@@ -52,4 +52,5 @@ btnCopy.addEventListener('click', () => {
   copyInput.select();
   // Will copy the text
   document.execCommand('Copy');
+  alert('Copied');  
 })
